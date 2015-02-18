@@ -1,2 +1,2 @@
 # dotfiles
-Helpful files for git projects and terminal navigation
+Terminal highlighting and helpful files for gitprojects

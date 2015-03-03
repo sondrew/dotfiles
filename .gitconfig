@@ -15,10 +15,12 @@
 	b = branch
 	ab = branch -a
 	f = fetch
+	s = status
 	authors = "!git log --pretty=format:%aN | sort | uniq -c | sort -rn"
 	c = commit -m
 	ca = commit --amend
 	co = checkout
+	cam = commit -am
 	d = diff
 	dc = diff --cached
 	ds = diff --staged

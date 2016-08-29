@@ -19,31 +19,36 @@ alias cl='clear'
 alias pls='sudo'
 alias cpyf='pbpaste >' # Copy file
 alias cpy='pwd|pbcopy' # Copy path
-alias sub='open -a Sublime' # Open file/directory in Sublime
+alias sizelist='du -sm *'
+alias sub='open -a Sublime'
 alias tab='printf "\e]1;%s\a"' # Name tab in terminal
+alias chrome='open -a "Google Chrome"'
 alias bprof='nano /User/Sondre/.bash_profile'
 
 # GIT
 alias g='git'
-alias gs='git status'
-alias gd='git diff'
 alias ga='git add'
+alias gd='git diff'
 alias gph='git push'
 alias gpl='git pull'
-alias gf='git fetch'
-alias gall='git add -A'
+alias gs='git status'
 alias gres='git reset'
-alias grh='git reset --hard'
+alias gf='git fetch -p'
+alias gall='git add -A'
+alias gco='git checkout'
+alias gb='git branch -a'
 alias gcom='git commit -m'
 alias gcam='git commit -am'
-alias gb='git branch -a'
-alias gco='git checkout'
 alias gnb='git checkout -b'
+alias grh='git reset --hard'
 alias glc="git log --graph --pretty=format:'%Cred%h%Creset %an -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 
 # MISC
-alias lcat='lolcat' # Colorful alternativ to 'cat'
+alias lat='lolcat' # Colorful alternativ to 'cat'
+alias neo='cmatrix'
 alias python='python3' # Run python 3 by default
 alias python2='\python'
+alias starwars='telnet towel.blinkenlights.nl'
+alias ghostbusters='cowsay -f ghostbusters Who you Gonna Call'
 alias screensaver='while true; do doge | lolcat -a -d 100 -s 100 -p 1; done'
 alias start_docker='bash "/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh"'

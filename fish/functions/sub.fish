@@ -1,3 +1,3 @@
 function sub
-	subl $argv
+	open -a 'Sublime Text' $argv
 end

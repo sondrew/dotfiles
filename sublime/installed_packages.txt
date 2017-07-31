@@ -1,0 +1,10 @@
+Alignment
+Babel
+ColorPicker
+Git
+HTML Boilerplate
+HTML-CSS-JS Prettify
+Hungry Backspace
+MarkdownEditing
+Material Theme
+Package Contorl

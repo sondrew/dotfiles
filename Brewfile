@@ -1,4 +1,5 @@
-# formula
+cask_args appdir: "/Applications"
+# formulae
 tap "caskroom/cask"
 tap "caskroom/versions"
 tap "homebrew/bundle"
@@ -6,11 +7,13 @@ tap "homebrew/core"
 tap "homebrew/services"
 # browsers
 cask "google-chrome"
+cask "google-chrome-canary"
 cask "vivaldi"
 cask "firefox"
 # development
 cask "sublime-text"
 cask "iterm2"
+cask "arduino"
 cask "filezilla"
 brew "mosquitto"
 brew "python"
@@ -34,11 +37,13 @@ cask "google-backup-and-sync"
 cask "the-unarchiver"
 cask "puush"
 cask "spectacle"
+cask "android-file-transfer"
 cask "ccleaner"
 brew "lastpass-cli", args: ["with-pinentry"]
 # media/messaging/entertainment
 cask "slack"
 cask "whatsapp"
+cask "skype"
 cask "vlc"
 cask "spotify"
 cask "calibre"

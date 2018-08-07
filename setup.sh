@@ -12,6 +12,8 @@ npm install -g n
 cp -a fish/functions/. ~/.config/fish/functions
 # copy bash_profile and gitconfig to user folder
 cp {.bash_profile,.gitconfig} ~/.
+# load iterm profile
+# load .osx defaults config 
 # check versions
 python --version
 git --version

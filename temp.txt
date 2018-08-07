@@ -1,0 +1,272 @@
+defaults read com.apple.safari
+AutoFillCreditCardData = 0;
+AutoFillFromAddressBook = 0;
+AutoFillMiscellaneousForms = 0;
+AutoFillPasswords = 0;
+AutoShowToolbarInFullScreen = 0;
+AlwaysRestoreSessionAtLaunch = 1;
+DefaultBrowserPromptingState2 = 4;
+SendDoNotTrackHTTPHeader = 1;
+"ShowFavoritesBar-v2" = 0;
+ShowFullURLInSmartSearchField = 1;
+ShowOverlayStatusBar = 1;
+ShowSidebarInTopSites = 0;
+SkipLoadingExtensionsAtLaunch = 0;
+OpenNewTabsInFront = 0;
+OpenPrivateWindowWhenNotRestoringSessionAtLaunch = 0;
+NewTabBehavior = 1;
+NewWindowBehavior = 1;
+
+
+com.apple.finder
+ShowExternalHardDrivesOnDesktop = 1;
+    ShowHardDrivesOnDesktop = 1;
+    ShowMountedServersOnDesktop = 1;
+
+com.bittorrent.uTorrent
+TorrentsDataSourceSortColumn = 8;
+    TorrentsDataSourceSortDescending = 1;
+
+com.puush.puush
+DockIcon = 0;
+Startup = 1;
+disabled = 1;
+
+com.spotify.client
+AutoStartSettingIsHidden = 0;
+
+NSGlobalDomain
+AppleInterfaceStyle = Dark;
+AppleActionOnDoubleClick = Maximize;
+AppleLanguages =     (
+        "en-NO",
+        "nb-NO"
+    );
+NSUserDictionaryReplacementItems =     (
+                {
+            on = 1;
+            replace = omw;
+            with = "On my way!";
+        }
+    );
+
+
+com.apple.mail
+
+
+    "com.apple.menuextra.battery" =     {
+        ShowPercent = YES;
+    };
+    "com.apple.menuextra.clock" =     {
+        DateFormat = "EEE d MMM  HH:mm:ss";
+        FlashDateSeparators = 0;
+        IsAnalog = 0;
+    };
+
+
+14981d14877
+<         "NSStatusItem Preferred Position com.apple.menuextra.clock" = 127;
+14996d14891
+<             "/System/Library/CoreServices/Menu Extras/Clock.menu",
+14998c14893,14894
+<             "/System/Library/CoreServices/Menu Extras/Displays.menu"
+---
+>             "/System/Library/CoreServices/Menu Extras/Displays.menu",
+>             "/System/Library/CoreServices/Menu Extras/Clock.menu"
+
+"com.apple.systemuiserver" =     { 
+    "NSStatusItem Preferred Position com.apple.menuextra.clock" = 127;
+    "NSStatusItem Visible com.apple.menuextra.battery" = 1;
+    "NSStatusItem Visible com.apple.menuextra.clock" = 1;
+    menuExtras =         (
+            "/System/Library/CoreServices/Menu Extras/AirPort.menu",
+            "/System/Library/CoreServices/Menu Extras/TextInput.menu",
+            "/System/Library/CoreServices/Menu Extras/Battery.menu",
+            "/System/Library/CoreServices/Menu Extras/Clock.menu",
+            "/System/Library/CoreServices/Menu Extras/Bluetooth.menu",
+            "/System/Library/CoreServices/Menu Extras/Displays.menu"
+        );
+};
+
+
+# PRINTER
+
+"com.apple.print.custompresets.forprinter.followprint_win_ntnu_no___Ricoh" =     {
+        "com.apple.print.lastPresetPref" = "Default Settings";
+        "com.apple.print.lastPresetPrefType" = 1;
+        "com.apple.print.lastUsedSettingsPref" =         {
+            "com.apple.print.preset.id" = "com.apple.print.lastUsedSettingsPref";
+            "com.apple.print.preset.settings" =             {
+                "AP_D_InputSlot" = "";
+                BookletBinding = 0;
+                BookletType = 0;
+                PaperInfoIsSuggested = 1;
+                "com.apple.print.PageToPaperMappingMediaName" = A4;
+                "com.apple.print.PageToPaperMappingType" = 1;
+                "com.apple.print.PrintSettings.PMCopies" = 1;
+                "com.apple.print.PrintSettings.PMCopyCollate" = 1;
+                "com.apple.print.PrintSettings.PMDestinationType" = 1;
+                "com.apple.print.PrintSettings.PMDuplexing" = 1;
+                "com.apple.print.PrintSettings.PMFirstPage" = 1;
+                "com.apple.print.PrintSettings.PMLastPage" = 2147483647;
+                "com.apple.print.PrintSettings.PMPageRange" =                 (
+                    1,
+                    2147483647
+                );
+                "com.apple.print.preset.Orientation" = 1;
+                "com.apple.print.preset.PaperInfo" =                 {
+                    paperInfo =                     {
+                        PMPPDPaperCodeName = A4;
+                        PMPPDTranslationStringPaperName = A4;
+                        PMTiogaPaperName = "iso-a4";
+                        "com.apple.print.PageFormat.PMAdjustedPageRect" =                         (
+                            0,
+                            0,
+                            818,
+                            571
+                        );
+                        "com.apple.print.PageFormat.PMAdjustedPaperRect" =                         (
+                            "-12",
+                            "-12",
+                            830,
+                            583
+                        );
+                        "com.apple.print.PaperInfo.PMCustomPaper" = 0;
+                        "com.apple.print.PaperInfo.PMPaperName" = "iso-a4";
+                        "com.apple.print.PaperInfo.PMUnadjustedPageRect" =                         (
+                            0,
+                            0,
+                            818,
+                            571
+                        );
+                        "com.apple.print.PaperInfo.PMUnadjustedPaperRect" =                         (
+                            "-12",
+                            "-12",
+                            830,
+                            583
+                        );
+                        "com.apple.print.PaperInfo.ppd.PMPaperName" = A4;
+                        "com.apple.print.ticket.type" = "com.apple.print.PaperInfoTicket";
+                    };
+                };
+                "com.apple.print.subTicket.paper_info_ticket" =                 {
+                    PMPPDPaperCodeName = A4;
+                    PMPPDTranslationStringPaperName = A4;
+                    PMTiogaPaperName = "iso-a4";
+                    "com.apple.print.PaperInfo.PMDisplayName" = "iso-a4";
+                    "com.apple.print.PaperInfo.PMPPDPaperDimension" =                     (
+                        0,
+                        0,
+                        595,
+                        842
+                    );
+                    "com.apple.print.PaperInfo.PMPaperName" = "iso-a4";
+                    "com.apple.print.PaperInfo.PMUnadjustedPageRect" =                     (
+                        0,
+                        0,
+                        818,
+                        571
+                    );
+                    "com.apple.print.PaperInfo.PMUnadjustedPaperRect" =                     (
+                        "-12",
+                        "-12",
+                        830,
+                        583
+                    );
+                    "com.apple.print.PaperInfo.ppd.PMPaperName" = A4;
+                    "com.apple.print.ticket.type" = "com.apple.print.PaperInfoTicket";
+                };
+                "com.apple.print.ticket.type" = "com.apple.print.PrintSettingsTicket";
+            };
+        };
+    };
+    "com.apple.print.custompresets.forprinter.followprint_win_ntnu_no___Xerox" =     {
+        "com.apple.print.lastPresetPref" = "Default Settings";
+        "com.apple.print.lastPresetPrefType" = 1;
+        "com.apple.print.lastUsedSettingsPref" =         {
+            "com.apple.print.preset.id" = "com.apple.print.lastUsedSettingsPref";
+            "com.apple.print.preset.settings" =             {
+                "AP_D_InputSlot" = "";
+                BookletBinding = 0;
+                BookletType = 0;
+                PaperInfoIsSuggested = 1;
+                "com.apple.print.PageToPaperMappingMediaName" = A4;
+                "com.apple.print.PageToPaperMappingType" = 1;
+                "com.apple.print.PrintSettings.PMCopies" = 1;
+                "com.apple.print.PrintSettings.PMCopyCollate" = 1;
+                "com.apple.print.PrintSettings.PMDestinationType" = 1;
+                "com.apple.print.PrintSettings.PMDuplexing" = 1;
+                "com.apple.print.PrintSettings.PMFirstPage" = 1;
+                "com.apple.print.PrintSettings.PMLastPage" = 2147483647;
+                "com.apple.print.PrintSettings.PMPageRange" =                 (
+                    1,
+                    2147483647
+                );
+                "com.apple.print.preset.Orientation" = 1;
+                "com.apple.print.preset.PaperInfo" =                 {
+                    paperInfo =                     {
+                        PMPPDPaperCodeName = A4;
+                        PMPPDTranslationStringPaperName = A4;
+                        PMTiogaPaperName = "iso-a4";
+                        "com.apple.print.PageFormat.PMAdjustedPageRect" =                         (
+                            0,
+                            0,
+                            818,
+                            571
+                        );
+                        "com.apple.print.PageFormat.PMAdjustedPaperRect" =                         (
+                            "-12",
+                            "-12",
+                            830,
+                            583
+                        );
+                        "com.apple.print.PaperInfo.PMCustomPaper" = 0;
+                        "com.apple.print.PaperInfo.PMPaperName" = "iso-a4";
+                        "com.apple.print.PaperInfo.PMUnadjustedPageRect" =                         (
+                            0,
+                            0,
+                            818,
+                            571
+                        );
+                        "com.apple.print.PaperInfo.PMUnadjustedPaperRect" =                         (
+                            "-12",
+                            "-12",
+                            830,
+                            583
+                        );
+                        "com.apple.print.PaperInfo.ppd.PMPaperName" = A4;
+                        "com.apple.print.ticket.type" = "com.apple.print.PaperInfoTicket";
+                    };
+                };
+                "com.apple.print.subTicket.paper_info_ticket" =                 {
+                    PMPPDPaperCodeName = A4;
+                    PMPPDTranslationStringPaperName = A4;
+                    PMTiogaPaperName = "iso-a4";
+                    "com.apple.print.PaperInfo.PMDisplayName" = "iso-a4";
+                    "com.apple.print.PaperInfo.PMPPDPaperDimension" =                     (
+                        0,
+                        0,
+                        595,
+                        842
+                    );
+                    "com.apple.print.PaperInfo.PMPaperName" = "iso-a4";
+                    "com.apple.print.PaperInfo.PMUnadjustedPageRect" =                     (
+                        0,
+                        0,
+                        818,
+                        571
+                    );
+                    "com.apple.print.PaperInfo.PMUnadjustedPaperRect" =                     (
+                        "-12",
+                        "-12",
+                        830,
+                        583
+                    );
+                    "com.apple.print.PaperInfo.ppd.PMPaperName" = A4;
+                    "com.apple.print.ticket.type" = "com.apple.print.PaperInfoTicket";
+                };
+                "com.apple.print.ticket.type" = "com.apple.print.PrintSettingsTicket";
+            };
+        };
+    };
+

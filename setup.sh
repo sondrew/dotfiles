@@ -1,5 +1,11 @@
+#!/bin/sh
 # install homebrew
-/usr/bin/ruby -e "$(curl -fsSl https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+if test ! $(which brew); then
+  echo "Installing homebrew.."
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
 # make sure everything is ready
 brew update
 brew doctor

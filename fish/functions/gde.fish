@@ -3,5 +3,5 @@ function gde --description 'git diff excluding files given as arguments'
     for arg in $argv
         set cmd "$cmd ':(exclude)$arg'"
     end
-    eval $cmd
+    $cmd
 end

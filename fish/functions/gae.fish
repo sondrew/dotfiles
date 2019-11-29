@@ -3,5 +3,5 @@ function gae --description 'git add all files excluding those given as arguments
     for arg in $argv
         set cmd "$cmd ':(exclude)$arg'"
     end
-    eval $cmd
+    $cmd
 end

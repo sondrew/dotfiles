@@ -1,0 +1,8 @@
+{
+    "extensions":
+    [
+        "fish"
+    ],
+    "indent_on_save": true,
+    "compat_highlighter_fish_version": "3"
+}

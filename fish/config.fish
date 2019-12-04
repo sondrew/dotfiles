@@ -1,7 +1,8 @@
-set -g fish_user_paths "/usr/local/opt/openssl/bin" $fish_user_paths
-set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+# ------------------ #
+# FISH ABBREVIATIONS #
+# ------------------ #
 
-# general/misc
+# -- GENERAL -- #
 abbr . 'open .'
 abbr .. 'cd ..'
 abbr ... 'cd ../..'
@@ -11,6 +12,7 @@ abbr cl 'clear'
 abbr m 'man'
 abbr lat 'lolcat'
 abbr pss 'ps aux | grep'
+abbr week 'date +%V'
 #direcories
 abbr tre 'tree -a'
 abbr tref 'tree --filelimit'
@@ -24,12 +26,13 @@ abbr ns 'npm start'
 abbr ni 'npm install'
 abbr nid 'npm install --save-dev'
 abbr nis 'npm install --save'
+abbr nri 'rm -rf node_modules/* && npm install'
 #iterm2 tabset
 abbr tabc 'tabset --color'
 abbr tabb 'tabset --badge'
 abbr tab 'tabset'
 
-# git
+# -- GIT -- #
 abbr g 'git'
 abbr gs 'git status'
 # branches

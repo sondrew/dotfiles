@@ -7,7 +7,6 @@ tap "homebrew/core"
 tap "homebrew/services"
 # browsers
 cask "google-chrome"
-cask "google-chrome-canary"
 cask "vivaldi"
 cask "firefox"
 # development
@@ -41,6 +40,7 @@ cask "android-file-transfer"
 cask "ccleaner"
 brew "lastpass-cli", args: ["with-pinentry"]
 # media/messaging/entertainment
+cask "adobe-creative-cloud"
 cask "slack"
 cask "whatsapp"
 cask "skype"

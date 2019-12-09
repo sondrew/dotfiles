@@ -2,21 +2,35 @@
 # install homebrew
 
 if test ! $(which brew); then
-  echo "Installing homebrew.."
+  echo "Installing homebrew..."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 # make sure everything is ready
 brew update
 brew doctor
-# install Brewfile
+
+echo "Starting Brewfile install..."
 brew bundle
-# useful npm packages
+
+echo "Installing iterm2..."
 npm install -g iterm2-tab-set
+
+echo "Installing node version manager..."
 npm install -g n
-# copy fish functions from repo into fish function folder
-cp -a fish/functions/. ~/.config/fish/functions
-# copy bash_profile and gitconfig to user folder
+
+echo "Installing latest node version..."
+n latest
+
+echo "Copying fish config..."
+mkdir -p ~/.config/
+cp -a fish ~/.config/
+
+echo "Making fish default shell..."
+echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+chsh -s `which fish`
+
+echo "Copying git and bash configs..."
 cp {.bash_profile,.gitconfig} ~/.
 # load iterm profile
 # load .osx defaults config 
@@ -24,6 +38,12 @@ cp {.bash_profile,.gitconfig} ~/.
 python --version
 git --version
 # Change computer name
-# sudo scutil --set HostName <new host name>
-# sudo scutil --set LocalHostName <new host name>
-# sudo scutil --set ComputerName <new name>
+echo -e "\nIf you wish to change the name of your local comuter, run these commands"
+echo "hostname=\"cool_name\""
+echo "sudo scutil --set HostName \$hostname"
+echo "sudo scutil --set LocalHostName \$hostname"
+echo "sudo scutil --set ComputerName \$hostname"
+
+echo -e "\nOpening fish terminal..."
+fish
+exit 1

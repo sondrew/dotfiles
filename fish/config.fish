@@ -1,6 +1,7 @@
 # ------------------ #
 # FISH ABBREVIATIONS #
 # ------------------ #
+screenfetch
 
 # -- GENERAL -- #
 abbr . 'open .'

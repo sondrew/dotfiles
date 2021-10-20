@@ -1,7 +1,19 @@
+if status is-interactive
+    # Commands to run in interactive sessions can go here
+end
+
+# Add n (node version manager) to path
+set -x N_PREFIX "$HOME/n"; contains "$N_PREFIX/bin" $PATH; or set -a PATH "$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+# Remove windows node path from WSL path
+set PATH (string match -v /mnt/c/Program\ Files/nodejs/ $PATH)
+
+# Display system info on startup
+screenfetch
+
+
 # ------------------ #
 # FISH ABBREVIATIONS #
 # ------------------ #
-screenfetch
 
 # -- GENERAL -- #
 abbr . 'open .'
@@ -83,3 +95,8 @@ abbr gbl 'git blame'
 abbr gr 'git remote -v'
 abbr gcp 'git cherry-pick'
 abbr gf 'git fetch --all --prune'
+
+# project specific
+abbr dev 'cd ~/dev'
+abbr rdev 'npm run dev:start'
+

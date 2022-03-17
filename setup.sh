@@ -22,9 +22,13 @@ npm install -g n
 echo "Installing latest node version..."
 n latest
 
-echo "Copying fish config..."
+#echo "Copying fish config..."
+#mkdir -p ~/.config/
+#cp -a fish ~/.config/
+
+echo "Symlinking fish config in repo with local fish config..."
 mkdir -p ~/.config/
-cp -a fish ~/.config/
+ln -s fish/ ~/.config/
 
 echo "Making fish default shell..."
 echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
@@ -33,7 +37,7 @@ chsh -s `which fish`
 echo "Copying git and bash configs..."
 cp {.bash_profile,.gitconfig} ~/.
 # load iterm profile
-# load .osx defaults config 
+# load .osx defaults config
 # check versions
 python --version
 git --version

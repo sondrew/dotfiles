@@ -1,5 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 # install homebrew
+
+# Ask for the administrator password upfront
+echo "Run script as admin..."
+sudo -v
 
 if test ! $(which brew); then
   echo "Installing homebrew..."
@@ -17,14 +21,16 @@ echo "Installing iterm2..."
 npm install -g iterm2-tab-set
 
 echo "Installing node version manager..."
-npm install -g n
+brew install n
 
 echo "Installing latest node version..."
 n latest
 
-#echo "Copying fish config..."
-#mkdir -p ~/.config/
-#cp -a fish ~/.config/
+echo "Installing yarn..."
+npm install -g yarn
+
+echo "Installing Xcode and Mac developer tools"
+xcode-select --install
 
 echo "Symlinking fish config in repo with local fish config..."
 mkdir -p ~/.config/
@@ -41,6 +47,10 @@ cp {.bash_profile,.gitconfig} ~/.
 # check versions
 python --version
 git --version
+node --version
+npm --version
+yarn --version
+xcode-select -p
 # Change computer name
 echo -e "\nIf you wish to change the name of your local comuter, run these commands"
 echo "hostname=\"cool_name\""

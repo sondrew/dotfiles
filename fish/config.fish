@@ -34,12 +34,14 @@ abbr lsize 'du * --total --human-readable' #files/directories/subdirectories and
 abbr slist 'du -sm *' #all files/directories and number of subdirectories at root
 abbr dirnum 'ls -l | grep "^d" | wc -l' #number of non-hidden directories
 abbr dirnuma 'ls -al | grep "^d" | wc -l' #number of directories incl. hidden
-#npm
+#npm/yarn
 abbr ns 'npm start'
 abbr ni 'npm install'
 abbr nid 'npm install --save-dev'
 abbr nis 'npm install --save'
 abbr nri 'rm -rf node_modules/* && npm install'
+abbr yw 'yarn watch'
+abbr yi 'yarn install'
 #iterm2 tabset
 abbr tabc 'tabset --color'
 abbr tabb 'tabset --badge'
@@ -52,13 +54,15 @@ abbr gs 'git status'
 abbr gco 'git checkout'
 abbr gnb 'git checkout -b'
 abbr gcm 'git checkout master'
+abbr gcmm 'git checkout main'
 abbr gb 'git branch --all'
 # push/pull
-abbr gpl 'git pull'
-abbr gph 'git push'
-abbr gpo 'git push origin'
+abbr gpl 'git pull origin'
+abbr gph 'git push origin'
 abbr gphm 'git push origin master'
+abbr gphmm 'git push origin main'
 abbr gplm 'git pull origin master'
+abbr gplmm 'git pull origin main'
 # files
 abbr ga 'git add'
 abbr gai 'git add --interactive'
@@ -82,12 +86,12 @@ abbr gsa 'git stash apply'
 abbr gss 'git stash show -p'
 abbr gsp 'git stash push -m'
 # reset
-abbr greh 'git reset HEAD~'
-abbr grh 'git reset --hard'
-abbr grhm 'git reset --hard origin/master'
+abbr gre 'git reset'
+abbr grs 'git reset --soft HEAD~'
 # rebase
 abbr grc 'git rebase --continue'
 abbr gri 'git rebase --interactive'
+abbr gri 'git rebase --interactive HEAD~'
 # misc
 abbr gl 'git log'
 abbr gm 'git merge'

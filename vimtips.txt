@@ -1,0 +1,37 @@
+:registers - clipboard manager for vim
+
+c + i + d  - change, inner, delete
+c + i + "  - change, inner, everything between "
+c + a + "  - change a(outer), everything between "
+c + w  - change, word
+
+:split, :vsplit  - split window into two editors
+:new, :vnew  - create new file
+ctrl + w + w - change active window
+ctrl + r - rotate
+
+/  - search in fiel
+%s/test/TEST/g  - s searh replace test with TEST
+%g/hello/d  - % whole file, g run command on matching lines, d delete
+
+
+
+:set ft=json  - set filetype = json. syntax hightlight file without filetype
+
+%!jq .  - pipe filen til jq. % means whole file
+
+y - yank (copy)
+y + y  - yank yank, (yank line)
+y + " + *  - yank to register "* (clipboard)
+"=   - register for creating script to input value
+
+f - forward
+b - backward
+V - select line
+v - select
+u - undo
+r - redo
+p - put/paste
+
+ctrl + v - multiline select
+

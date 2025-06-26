@@ -2,14 +2,24 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+source ~/.asdf/asdf.fish
+
+# starship 
+# starship init fish | source
+
 # Add n (node version manager) to path
-set -x N_PREFIX "$HOME/n"; contains "$N_PREFIX/bin" $PATH; or set -a PATH "$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+#set -x N_PREFIX "$HOME/n"; contains "$N_PREFIX/bin" $PATH; or set -a PATH 
+"$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
 # Remove windows node path from WSL path
-set PATH (string match -v /mnt/c/Program\ Files/nodejs/ $PATH)
+#set PATH (string match -v /mnt/c/Program\ Files/nodejs/ $PATH)
+# source autojump
+[ -f /opt/homebrew/share/autojump/autojump.fish ]; and source /opt/homebrew/share/autojump/autojump.fish
 
 # Display system info on startup
-screenfetch
+#screenfetch -- doesnt suppoert Apple silicon chipso
+neofetch
 
+cd ~
 
 # ------------------ #
 # FISH ABBREVIATIONS #
@@ -57,8 +67,10 @@ abbr gcm 'git checkout master'
 abbr gcmm 'git checkout main'
 abbr gb 'git branch --all'
 # push/pull
-abbr gpl 'git pull origin'
-abbr gph 'git push origin'
+abbr gpl 'git pull'
+abbr gplo 'git pull origin'
+abbr gph 'git push'
+abbr gpho 'git push origin'
 abbr gphm 'git push origin master'
 abbr gphmm 'git push origin main'
 abbr gplm 'git pull origin master'
@@ -104,3 +116,8 @@ abbr gf 'git fetch --all --prune'
 abbr dev 'cd ~/dev'
 abbr rdev 'npm run dev:start'
 
+
+thefuck --alias | source
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/sondre/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/sondre/Downloads/google-cloud-sdk/path.fish.inc'; end
